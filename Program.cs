@@ -1,18 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace My_First_C__Project
+namespace Get_Password
 {
-    internal class Program
+    internal static class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
         static void Main()
         {
-            Console.WriteLine("Hello , This is my first C# Project");
-            string Name = Console.ReadLine();
-            Console.WriteLine("\nYour Name is : %d", Name );
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new PASSWORD());
         }
     }
 }
